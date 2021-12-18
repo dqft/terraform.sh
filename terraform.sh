@@ -9,7 +9,7 @@ _reverse_lookup() {
 }
 
 test -e ~/.env && _env_files=~/.env
-_env_files=${_env_files} $(_reverse_lookup $PWD .env)
+_env_files="${_env_files} $(_reverse_lookup $PWD .env)"
 
 # Sets a variable from its value in a file or from its given fallback value
 _env() {
